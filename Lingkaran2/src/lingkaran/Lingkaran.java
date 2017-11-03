@@ -1,40 +1,33 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package lingkaran;
 
-import java.awt.*;
-import javax.swing.*;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Toolkit;
+import javax.swing.JFrame;
 
 /**
  *
- * @author 
+ * @author WINDOWS
  */
 public class Lingkaran {
 
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
-        // TODO code application logic here
-        JFrame frame = new JFrame("ALGORITMA PEMBUAT LINGKARAN");
+        JFrame frame = new JFrame("algoritma pembuat lingkaran");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(800,600);
+        frame.setVisible(true);
         
         Dimension screenSize =
-        Toolkit.getDefaultToolkit().getScreenSize();
+                Toolkit.getDefaultToolkit().getScreenSize();
         frame.setLocation((screenSize.width - frame.getWidth()) / 2,
-        (screenSize.height - frame.getHeight()) / 2);
-
-        frame.setVisible(true);
+                ((screenSize.height - frame.getHeight())) /2);
 
         gambar gbr = new gambar();
         gbr.setxc(100);
         gbr.setyc(150);
-        gbr.setr(100);
+        gbr.setr(50);
         frame.add(gbr);
     }
-
 }
+    

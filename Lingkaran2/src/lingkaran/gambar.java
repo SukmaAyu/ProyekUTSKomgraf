@@ -1,18 +1,11 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package lingkaran;
 
 import java.awt.Color;
 import java.awt.Graphics;
 import javax.swing.JPanel;
 
-/**
- *
- * @author
- */
+
+
 public class gambar extends JPanel {
     private int xc,yc,r;
 
@@ -49,7 +42,7 @@ public class gambar extends JPanel {
         super.paint(g);
         this.setBackground(Color.WHITE);
         
-        g.setColor(Color.red);
+        g.setColor(Color.blue);
 
         while(x<=y) {
             x++;
@@ -72,3 +65,8 @@ public class gambar extends JPanel {
         
     }
 }
+
+
+    
+
+
